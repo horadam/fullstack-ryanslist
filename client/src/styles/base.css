@@ -1,0 +1,209 @@
+Html {
+    box-sizing: border-box;
+}
+
+*,* ::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin:0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#homeMain {
+    width: 960px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+    #homeNav, #homeCityList {
+        border-left: 1px solid rgb(197, 197, 197);
+        border-right: 1px solid rgb(197, 197, 197);
+        background-color: rgb(242,242,242)
+    }
+
+    #homeNav {
+        width: 200px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(0,10,235);
+    }
+
+        #homeNav h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        #homeNav input {
+            padding: 2px;
+            font-size: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        #homeNav p {
+            padding:0;
+            margin:5px 0;
+            font-size: 13px;
+        }
+
+        #homeNav p:hover {
+            color: rgb(75,25,128);
+            cursor:pointer;
+            text-decoration: underline
+        }
+
+    #homeCategories {
+        margin: 0px 15px;
+        width: 610px;
+    }
+
+
+        #homeCityBar {
+            font-family: serif;
+            text-align: center;
+            line-height: 42px;
+            font-size: 25px;
+            width: 100%;
+            height: 42px;
+            background-color: rgb(242,242,242);
+            border-top: 1px solid rgb(197, 197, 197);
+            border-bottom: 1px solid rgb(197, 197, 197);
+        }
+
+        #catsContainer {
+            display: flex;
+            flex-wrap:wrap;
+            flex-direction:column;
+            height: 1020px;
+            align-content: space-between;
+            width: 100%
+            
+        }
+            #catsContainer>div {
+                width: 29%;
+                /* overflow: auto; */
+            }
+
+            #catsContainer h3 {
+                border-top: 1px solid rgb(197, 197, 197);
+                border-bottom: 1px solid rgb(197, 197, 197);
+                background-color: rgb(242,242,242);
+                text-align: center;
+                font-size: 17px;
+                margin-top: 20px;
+                margin-bottom: 2px;
+                padding: 3px;
+                
+            }
+
+                #catsContainer h3 a {
+                    text-decoration: none;
+                    
+                }
+
+                .childCats {
+                    border-bottom: 1px solid rgb(209, 204, 204);
+                    width: 100%
+                }
+
+                .childCats:hover {
+                    background-color: rgb(242,242,242);
+                    cursor: pointer;
+                    
+                }
+
+                    .childCats a {
+                        text-decoration: none;
+                        font-size: 13px;
+                        
+                    }
+
+                    .childCats a:hover {
+                        text-decoration: none;
+                        color: rgb(75,25,128);
+                        
+                    }
+
+
+
+
+
+    #homeCityList {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #homeCityList select {
+        margin: 15px 0;
+        background-color: transparent;
+        width: 70px;
+    }
+
+    #homeCityList ul {
+        list-style: none;
+        padding: 0;
+        margin:7px 0;
+    }
+
+    #homeCityList li {
+        color: rgb(0,10,235);
+        text-align: center;
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+
+    #homeCityList li:hover {
+        color: rgb(75,25,128);
+        cursor:pointer;
+        text-decoration: underline
+    }
+
+    #homeCityList a {
+        text-decoration: none;
+        border-top: 1px solid rgb(197, 197, 197);
+        border-bottom: 1px solid rgb(197, 197, 197);
+        width: 95%;
+        text-align: center;
+        font-size: 11px;
+        font-weight: bold;
+        color: rgb(0,10,235);
+        padding: 4px;
+    }
+
+
+
+    #footer {
+        height: 40px;
+        border-top: 1px solid rgb(197, 197, 197);
+        background-color: rgb(242,242,242)
+    }
+
+    #footer>div {
+        width: 500px;
+        margin: auto;
+    }
+
+        #footer span {
+            font-size: 13px;
+            margin-right:7px;
+            margin-left:7px;
+            line-height: 40px;
+            color: rgb(0,10,235);
+        }
+
+        #footer span:hover {
+            color: rgb(75,25,128);
+            cursor: pointer;
+        }
+
+        #footer #copySign {
+            color: black;
+        }
+
