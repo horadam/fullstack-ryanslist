@@ -12,6 +12,7 @@ const conn = require('../db')
 
 router.get('/cities', function(req, res, next) {
   conn.query('SELECT * FROM cities', (err, results, fields) => {
+    console.log('fields',fields)
     res.json({
       cities: results
     })

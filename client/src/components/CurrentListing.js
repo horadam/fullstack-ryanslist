@@ -10,9 +10,9 @@ const Listing = (props) => {
 
 
     return (
-        <div>
+        <div id="listing">
             <Link to={'/' + props.slug}> &lt; Back to category</Link>
-            <p>{props.name}</p>
+            <h3>{props.name}</h3>
             <p>{props.listing}</p>
         </div>
     )

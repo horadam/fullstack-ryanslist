@@ -207,3 +207,42 @@ body {
             color: black;
         }
 
+    /* ------------------- */
+
+
+        #currentCat {
+            margin-left: 50px;
+        }
+
+        #currentCat h4,p {
+            margin-left: 50px;
+        }
+
+
+        #post {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #post input, textarea {
+            margin-bottom: 30px;
+            resize: none;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        #post button {
+            width: 100px;
+            align-self: center
+        }
+
+        #listing {
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+

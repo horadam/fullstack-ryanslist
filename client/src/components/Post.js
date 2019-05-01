@@ -19,11 +19,11 @@ const Post = (props) =>  {
 
 
         return (
-            <form onSubmit={handleSubmit}>
+            <form id="post" onSubmit={handleSubmit}>
                 <label>Title:</label>
-                <input type="text" id="name" name="name" placeholder="Enter a title" onChange={e => setName(e.target.value)} />
-                <label>Description</label>
-                <textarea id="listing" name="listing" placeholder="Enter a description" onChange={e => setListing(e.target.value)} />
+                <input autocomplete="off" type="text" id="name" name="name" placeholder="Enter a title" onChange={e => setName(e.target.value)} />
+                <label>Description:</label>
+                <textarea id="ldescription" name="description" rows="10" placeholder="Enter a description" onChange={e => setListing(e.target.value)} />
                 <button type="submit">Post</button>
             </form>
         )

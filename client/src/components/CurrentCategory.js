@@ -11,8 +11,11 @@ const CurrentCategory = (props) => {
 
 
     return (
-        <div>
+        <div id="currentCat">
             <h1>{props.name}</h1>
+            <p>
+                <Link to={"/"}>&lt; all categories</Link>
+            </p>
             <h4>
                 <Link to={"/post/" + props.categoryId}>create a posting</Link>
             </h4>
@@ -20,7 +23,7 @@ const CurrentCategory = (props) => {
                 {props.currentListings.map((listing, i) => (
                     <li key={'listing' + i}>
                         <p><Link to={"/listing/" + listing.id}>{listing.name}</Link></p>
-                        <p>{listing.listing}</p>
+                        {/* <p>{listing.listing}</p> */}
                     </li>
                 ))}
             </ul>
